@@ -1,20 +1,15 @@
 // This is my first JavaScript code!
 console.log('Hello World');
 
-let name = 'Mosh';
-console.log(name);
-
 // Cannot be a reserved keyword
 // Should be meaningful
 // Cannot start with a number (1name)
 // Cannot contain a space or hyphen (-)
 // Are case-sensitive
 
-let firstName = 'Mosh';
 let lastName = 'Hamedani';
 
-const interestRate = 0.3;
-interestRate = 1;
+let interestRate = 0.3;
 console.log(interestRate);
 
 let name = 'Mosh';
@@ -37,7 +32,7 @@ person[selection] = 'Mary';
 
 console.log(person.name);
 
-let selectedColor = ['red', 'blue'];
+selectedColor = ['red', 'blue'];
 selectedColor[2] = 1;
 console.log(selectedColor.length);
 
