@@ -17,8 +17,22 @@ const interestRate = 0.3;
 interestRate = 1;
 console.log(interestRate);
 
-let name = 'Mosh'; // String Literal
-let age = 30; // Number Literal
-let isApproved = false; // Boolean Literal
+let name = 'Mosh';
+let age = 30;
+let isApproved = false;
 let firstName = undefined;
 let selectedColor = null;
+
+let person = {
+  name: 'Mosh',
+  age: 30
+};
+
+// Dot Notation
+person.name = 'John';
+
+// Bracket Notation
+let selection = 'name';
+person[selection] = 'Mary';
+
+console.log(person.name);
