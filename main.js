@@ -47,3 +47,16 @@ function square(number) {
 }
 
 console.log(square(2));
+
+// let, const
+const score = 10;
+console.log(score);
+
+// String, Numbers, Boolean, null, undefined
+const rating = 4.5;
+const isCool = true;
+const x = null;
+const y = undefined;
+let z;
+
+console.log(typeof x);
