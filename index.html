@@ -1,934 +1,383 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 <title>Page Title</title>
-<style>
-  body {
-  background-color: yellow; 
-  color: red;
-}
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
-  </style>
 </head>
-<body>
+<body style="background-color:powderblue;">
 
-  <h2>My First JavaScript</h2>
+  <h1>My First Heading</h1>
+<p>My first paragraph.</p>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+  <h1>This is heading 1</h1>
+  <h2>This is heading 2</h2>
+  <h3>This is heading 3</h3>
+  <h4>This is heading 4</h4>
+  <h5>This is heading 5</h5>
+  <h6>This is heading 6</h6>
 
-<p id="demo"></p>
+  <p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
 
-  <p id="demo">Click the button to change the layout of this paragraph</p>
+<h2>HTML Links</h2>
+<p>HTML links are defined with the a tag:</p>
 
-  <button onclick="myFunction()">Click Me!</button>
-  
-  <script>
-  function myFunction() {
-    let x = document.getElementById("demo");
-    x.style.fontSize = "25px"; 
-    x.style.color = "red"; 
-  }
-  </script>
+<a href="https://www.w3schools.com">This is a link</a>
 
-<h2>JavaScript Arrays</h2>
+<h2>HTML Images</h2>
+<p>HTML images are defined with the img tag:</p>
 
-<p>The Array object is used to store multiple values in a single variable:</p>
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
 
-<p id="demo"></p>
+<p>This is a <br> paragraph with a line break.</p>
 
-<script>
-const cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
-</script>
+<h2>The href Attribute</h2>
 
-<h1>JavaScript Strings</h1>
+<p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
 
-<p>Strings are written inside single or double quotes:</p>
+<a href="https://www.w3schools.com">Visit W3Schools</a>
 
-<p id="demo"></p>
+<h2>The src Attribute</h2>
+<p>HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:</p>
 
-<script>
-let carName1 = "Volvo XC60";  // Double quotes
-let carName2 = 'Volvo XC60';  // Single quotes
+<img src="img_girl.jpg" width="500" height="600">
 
-document.getElementById("demo").innerHTML =
-carName1 + " " + carName2; 
-</script>
+<h2>Width and Height Attributes</h2>
 
-<h2>JavaScript Numbers</h2>
+<p>The width and height attributes of the img tag, defines the width and height of the image:</p>
 
-<p>Numbers can be written with or without decimals:</p>
+<img src="img_girl.jpg" width="500" height="600">
 
-<p id="demo"></p>
+<h2>The alt Attribute</h2>
+<p>The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains:</p>
 
-<script>
-let x = 3.14;
-let y = 3;
-document.getElementById("demo").innerHTML = x + "<br>" + y;
-</script>
+<img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
 
-<p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+<img src="img_typo.jpg" alt="Girl with a jacket">
 
-<p id="demo"></p>
+<p>If we try to display an image that does not exist, the value of the alt attribute will be displayed instead. </p>
 
-<script>
-let x = 123e5;
-let y = 123e-5;
-document.getElementById("demo").innerHTML = x + "<br>" + y;
-</script>
+<h2>The style Attribute</h2>
+<p>The style attribute is used to add styles to an element, such as color:</p>
 
-<h2>JavaScript Math</h2>
+<p style="color:red;">This is a red paragraph.</p>
 
-<p>Math.PI returns PI:</p>
-<p id="piDemo"></p>
+<h2 title="I'm a header">The title Attribute</h2>
 
-<p>Math.sqrt(16) returns the square root of 16:</p>
-<p id="sqrtDemo"></p>
+<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
 
-<script>
-document.getElementById("piDemo").innerHTML = Math.PI;
-document.getElementById("sqrtDemo").innerHTML = Math.sqrt(16);
-</script>
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
 
-<h2>JavaScript Dates</h2>
+<h1>About W3Schools</h1>
 
-<p>new Date() creates a new date object with the current date and time:</p>
+<p title=About W3Schools>
+You cannot omit quotes around an attribute value 
+if the value contains spaces.
+</p>
 
-<p id="demo"></p>
+<p><b>
+If you move the mouse over the paragraph above,
+your browser will only display the first word from the title.
+</b></p>
 
-<script>
-const d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>
+<h2>Single or Double Quotes?</h2>
+<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+<p>Move your mouse over the paragraphs below to see the effect:</p>
 
-<h2>JavaScript new Date()</h2>
+<p title='John "ShotGun" Nelson'>John with double quotes</p>
+<p title="John 'ShotGun' Nelson">John with single quotes</p>
 
-<p>JavaScript stores dates as milliseconds from Jan 1, 1970.</p>
+<h1 style="font-size:60px;">Heading 1</h1>
 
-<p>100000000000 milliseconds from Jan 1, 1970, is approximately Mar 3, 1973:</p>
+<p>You can change the size of a heading with the style attribute, using the font-size property.</p>
 
-<p id="demo"></p>
-
-<script>
-const d = new Date(100000000000);
-document.getElementById("demo").innerHTML = d;
-</script>
-
-<p>Create a date using ISO notation:</p>
-
-<p id="demo"></p>
-
-<script>
-const d = new Date("2015-03-25");
-document.getElementById("demo").innerHTML = d;</script>
-
-<p>new Date(7 numbers) creates a date object with the specified date and time:</p>
-
-<p id="demo"></p>
-
-<script>
-const d = new Date(2018, 11, 24, 10, 33, 30, 0);
-document.getElementById("demo").innerHTML = d;
-</script>
-
-<h2>JavaScript Regular Expressions</h2>
-
-<p>Do a case-insensitive search for "w3schools" in a string:</p>
-
-<p id="demo"></p>
-
-<script>
-let text = "Visit W3Schools";
-let pattern = /w3schools/i;
-let result = text.match(pattern);
-
-document.getElementById("demo").innerHTML = result;
-</script>
-
-<h1>JavaScript Statements</h1>
-<h2>The class Statement</h2>
-
-<p id="demo"></p>
-
-<script>
-class Car {
-  constructor(brand) {
-    this.carName = brand;
-  }
-}
-
-myCar = new Car("Ford");
-document.getElementById("demo").innerHTML = "My car is a " + myCar.carName;
-</script>
-
-<h1>JavaScript Errors</h1>
-<p>In this example we have written "alert" as "adddlert" to deliberately produce an error.</p>
-<p>The name property of the Error object returns the name of the error and the message property returns a description of the error:</p>
-
-<p id="demo" style="color:red"></p>
-
-<script>
-try {
-  adddlert("Welcome guest!");
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = 
-  err.name + "<br>" + err.message;
-}
-</script>
-
-<p>You cannot set the number of significant digits of a number to 500:</p>
-
-<p id="demo">
-
-<script>
-let num = 1;
-try {
-  num.toPrecision(500);
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.name;
-}
-</script>
-
-<p>You cannot use the value of a non-existing variable:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 5;
-try {
-  x = y + 1;
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.name;
-}
-</script>
-
-<p>You cannot evaluate code that contains a syntax error:</p>
-
-<p id="demo"></p>
-
-<script>
-try {
-  eval("'Hello");
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.name;
-}
-</script>
-
-<p>You cannot convert a number to upper case:</p>
-
-<p id="demo"></p>
-
-<script>
-let num = 1;
-try {
-  num.toUpperCase();
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.name;
-}
-</script>
-
-<p>Some characters cannot be URI decoded:</p>
-
-<p id="demo"></p>
-
-<script>
-try {
-  decodeURI("%%%");
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.name;
-}
-</script>
-
-<h2>JavaScript Booleans</h2>
-
-<p>Display the value of Boolean(10 > 9):</p>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = Boolean(10 > 9);
-</script>
-
-<p>Display the value of (10 > 9):</p>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = (10 > 9);
-</script>
-
-<h2>JavaScript Operators</h2>
-
-<h3>Addition</h3>
-
-<p>y = 5, calculate x = y + 2:</p>
-
-<p id="demo"></p>
-
-<script>
-let y = 5;
-let x = y + 2;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<h3>Subtraction</h3>
-
-<p>y = 5, calculate x = y - 2:</p>
-
-<p id="demo"></p>
-
-<script>
-let y = 5;
-let x = y - 2;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<h3>Multiplication</h3>
-
-<p>y = 5, calculate x = y * 2:</p>
-
-<p id="demo"></p>
-
-<script>
-let y = 5;
-let x = y * 2;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<h3>Division</h3>
-
-<p>y = 5, calculate x = y / 2:</p>
-
-<p id="demo"></p>
-
-<script>
-let y = 5;
-let x = y / 2;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<h3>Modulus</h3>
-
-<p>y = 5, calculate x = y % 2:</p>
-
-<p id="demo"></p>
-
-<script>
-let y = 5;
-let x = y % 2;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<h3>Increment</h3>
-
-<p>y = 5, calculate x = ++y:</p>
-
-<p id="demo1"></p>
-<p id="demo2"></p>
-
-<p><strong>Note:</strong> Both variables, y and x, are affected.</p>
-
-<script>
-let y = 5;
-let x = ++y;
-document.getElementById("demo1").innerHTML = y;
-document.getElementById("demo2").innerHTML = x;
-</script>
-
-<p>y = 5, calculate x = y++:</p>
-
-<p id="demo1"></p>
-<p id="demo2"></p>
-
-<p><strong>Note:</strong> Both variables, y and x, are affected.</p>
-
-<script>
-let y = 5;
-let x = y++;
-document.getElementById("demo1").innerHTML = y;
-document.getElementById("demo2").innerHTML = x;
-</script>
-
-<h3>Decrement</h3>
-
-<p>y = 5, calculate x = --y:</p>
-
-<p id="demo1"></p>
-<p id="demo2"></p>
-
-<p><strong>Note:</strong> Both variables, y and x, are affected.</p>
-
-<script>
-let y = 5;
-let x = --y;
-document.getElementById("demo1").innerHTML = y;
-document.getElementById("demo2").innerHTML = x;
-</script>
-
-<p>y = 5, calculate x = y--:</p>
-
-<p id="demo1"></p>
-<p id="demo2"></p>
-
-<p><strong>Note:</strong> Both variables, y and x, are affected.</p>
-
-<script>
-let y = 5;
-let x = y--;
-document.getElementById("demo1").innerHTML = y;
-document.getElementById("demo2").innerHTML = x;
-</script>
-
-<h3>Assignment</h3>
-
-<p>x = 10 and y = 5, calculate x = y:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 10;
-let y = 5;
-x = y;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<p>x = 10 and y = 5, calculate x += y:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 10;
-let y = 5;
-x += y;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<p>x = 10 and y = 5, calculate x -= y:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 10;
-let y = 5;
-x -= y;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<p>x = 10 and y = 5, calculate x *= y:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 10;
-let y = 5;
-x *= y;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<p>x = 10 and y = 5, calculate x /= y:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 10;
-let y = 5;
-x /= y;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<p>x = 10 and y = 5, calculate x %= y:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 10;
-let y = 5;
-x %= y;
-document.getElementById("demo").innerHTML = x;
-</script>
-
-<p>The AND operator (&&) returns true if both expressions are true, otherwise it returns false:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 6;
-let y = 3;
-
-document.getElementById("demo").innerHTML = 
-(x < 10 && y > 1) + "<br>" +
-(x < 10 && y < 1);
-</script>
-
-<p>The OR operator (||) returns true if one or both expressions are true, otherwise it returns false:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 6;
-let y = 3;
-
-document.getElementById("demo").innerHTML = 
-(x === 5 || y === 5) + "<br>" + 
-(x === 6 || y === 5) + "<br>" + 
-(x === 6 || y === 3);
-</script>
-
-<p>The NOT operator (!) returns true for false statements and false for true statements:</p>
-
-<p id="demo"></p>
-
-<script>
-let x = 6;
-let y = 3;
-
-document.getElementById("demo").innerHTML = 
-!(x === y) + "<br>" + 
-!(x > y);
-</script>
-
-<p>The typeof operator returns the type of a variable, object, function or expression:</p>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = 
-typeof "John" + "<br>" +
-typeof 3.14 + "<br>" +
-typeof NaN + "<br>" +
-typeof false + "<br>" +
-typeof [1, 2, 3, 4] + "<br>" +
-typeof {name:'John', age:34} + "<br>" +
-typeof new Date() + "<br>" +
-typeof function () {} + "<br>" +
-typeof myCar + "<br>" +
-typeof null;
-</script>
-
-<p>The delete operator deletes a property from an object:</p>
-
-<p id="demo"></p>
-
-<script>
-const person = {
-  firstname:"John",
-  lastname:"Doe",
-  age:50,
-  eyecolor:"blue"
-};
-
-delete person.age;
-
-document.getElementById("demo").innerHTML =
-person.firstname + " is " + person.age + " years old.";
-</script>
-
-<p>The in operator returns true if the specified property is in the specified object:</p>
-
-<p id="demo"></p>
-
-<script>
-// Arrays
-const cars = ["Saab", "Volvo", "BMW"];
-
-// Objects
-const person = {firstName:"John", lastName:"Doe", age:50};
-document.getElementById("demo").innerHTML =
-("Saab" in cars) + "<br>" + 
-(0 in cars) + "<br>" +
-(1 in cars) + "<br>" +
-(4 in cars) + "<br>" +
-("length" in cars) + "<br>" +
-
-("firstName" in person) + "<br>" +
-("age" in person) + "<br>" +
-
-// Predefined objects
-("PI" in Math) + "<br>" +
-("NaN" in Number) + "<br>" +
-("length" in String);
-</script>
-
-<p>The instanceof operator returns true if the specified object is an instance of the specified object.</p>
-
-<p id="demo"></p>
-
-<script> 
-const cars = ["Saab", "Volvo", "BMW"];
-
-document.getElementById("demo").innerHTML =
-(cars instanceof Array) + "<br>" + 
-(cars instanceof Object) + "<br>" +
-(cars instanceof String) + "<br>" +
-(cars instanceof Number);
-</script>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
 
 <p>
-  <a href="javascript:void(0);">Useless link</a>
+  This paragraph
+  contains a lot of lines
+  in the source code,
+  but the browser 
+  ignores it.
   </p>
   
   <p>
-  <a href="javascript:void(document.body.style.backgroundColor='red');">
-  Click me to change the background color of body to red.</a>
+  This paragraph
+  contains      a lot of spaces
+  in the source     code,
+  but the    browser 
+  ignores it.
+  </p>
+  
+  <p>
+  The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
   </p>
 
-<h3>Addition</h3>
+  <h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
 
-<p>The + operator concatenates (adds) strings:</p>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
 
-<p id="demo"></p>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
 
-<script>
-let text1 = "Good ";
-let text2 = "Morning";
-let text3 = text1 + text2;
-document.getElementById("demo").innerHTML = text3;
-</script>
+<p>This is<br>a paragraph<br>with line breaks.</p>
 
-<script>
-let text1 = "Good ";
-let text2 = "Morning";
-text1 += text2;
-document.getElementById("demo").innerHTML = text1;
-</script>
+<p>In HTML, spaces and new lines are ignored:</p>
 
-<h3>Comparison</h3>
+<p>
 
-<p>Assign 5 to x, and display the value of the comparison (x == 8):</p>
+  My Bonnie lies over the ocean.
 
-<p id="demo"></p>
+  My Bonnie lies over the sea.
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x == 8);
-</script>
+  My Bonnie lies over the ocean.
+  
+  Oh, bring back my Bonnie to me.
 
-<p>Assign 5 to x, and display the value of the comparison (x == 5):</p>
+</p>
 
-<p id="demo"></p>
+<p>The pre tag preserves both spaces and line breaks:</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x == 5);
-</script>
+<pre>
+   My Bonnie lies over the ocean.
 
-<p>Assign 5 to x, and display the value of the comparison (x === "5").</p>
+   My Bonnie lies over the sea.
 
-<p id="demo"></p>
+   My Bonnie lies over the ocean.
+   
+   Oh, bring back my Bonnie to me.
+</pre>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x === "5");
-</script>
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
 
-<p>Assign 5 to x, and display the value of the comparison (x === 5):</p>
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
 
-<p id="demo"></p>
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x === 5);
-</script>
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
 
-<p>Assign 5 to x, and display the value of the comparison (x != 8).</p>
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
 
-<p id="demo"></p>
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x != 8);
-</script>
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
 
-<p>Assign 5 to x, and display the value of the comparison (x !== "5"):</p>
+<p>This text is normal.</p>
 
-<p id="demo"></p>
+<p><b>This text is bold.</b></p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x !== "5");
-</script>
+<p><strong>This text is important!</strong></p>
 
-<p>Assign 5 to x, and return the value of the comparison (x !== 5):</p>
+<p><i>This text is italic.</i></p>
 
-<p id="demo"></p>
+<p><em>This text is emphasized.</em></p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x !== 5);
-</script>
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
 
-<p>Assign 5 to x, and display the value of the comparison (x > 8).</p>
- 
-<p id="demo"></p>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x > 8);
-</script>
+<p>My favorite color is <del>blue</del> red.</p>
 
-<p>Assign 5 to x, and display the value of the comparison (x < 8).</p>
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
 
-<p id="demo"></p>
+<p>This is <sub>subscripted</sub> text.</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x < 8);
-</script>
+<p>This is <sup>superscripted</sup> text.</p>
 
-<p>Assign 5 to x, and display the value of the comparison (x >= 8).</p>
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
 
-<p id="demo"></p>
+<p>Browsers usually indent blockquote elements.</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x >= 8);
-</script>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+</blockquote>
 
-<p>Assign 5 to x, and display the value of the comparison (x <= 8).</p>
+<p>Browsers usually insert quotation marks around the q element.</p>
 
-<button onclick="myFunction()">Try it</button>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
 
-<p id="demo"></p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
-<script>
-let x = 5;
-document.getElementById("demo").innerHTML = (x <= 8);
-</script>
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
 
-<p>Input your age and click the button:</p>
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
 
-<input id="age" value="18">
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
 
-<button onclick="myFunction()">Try it</button>
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
 
-<p id="demo"></p>
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 
-<script>
-function myFunction() {
-  let age, voteable;
-  age = document.getElementById("age").value;
-  voteable = (age < 18) ? "Too young":"Old enough";
-  document.getElementById("demo").innerHTML = voteable + " to vote.";
-}
-</script>
+<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
 
-  <h1>My Web Page</h1>
+<bdo dir="rtl">This line will be written from right to left</bdo>
 
-<p id="demo">My first paragraph.</p>
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Comments are not displayed in the browser -->
 
-<script>
-document.getElementById("demo").innerHTML = "Hello Dolly.";
-</script>
+<p>This is a paragraph.</p>
 
-<h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+<!-- <p>This is another paragraph </p> -->
 
-<script>
-//var myObj = { "name":"John", "age":31, "city":"New York" };
-//var myJSON = JSON.stringify(myObj);
-//window.location = "demo_json.php?x=" + myJSON;
-</script>
+<p>This is a paragraph too.</p>
 
-<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
+<p>This is a paragraph.</p>
+<!--
+<p>Look at this cool image:</p>
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+<p>This is a paragraph too.</p>
 
-<p id="demo"></p>
+<p>This <!-- great text --> is a paragraph.</p>
 
-<script>
-//var myJSON = '{ "name":"John", "age":31, "city":"New York" }';
-//var myObj = JSON.parse(myJSON);
-//document.getElementById("demo").innerHTML = myObj.name;
-</script>
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
 
-<h2>Store and retrieve data from local storage.</h2>
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
 
-<p id="demo"></p>
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
 
-<script>
-var myObj, myJSON, text, obj;
+<h3 style="color:Tomato;">Hello World</h3>
 
-//Storing data:
-//myObj = { "name":"John", "age":31, "city":"New York" };
-//myJSON = JSON.stringify(myObj);
-//localStorage.setItem("testJSON", myJSON);
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
-//Retrieving data:
-//text = localStorage.getItem("testJSON");
-//obj = JSON.parse(text);
-//document.getElementById("demo").innerHTML = obj.name;
-</script>
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 
-<h1>The Window History Object</h1>
-<h2>The history.length Property</h2>
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
 
-<p>Number of URLs in history list:</p>
-<p id="demo"></p>
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
 
-<p>Since this is a new window frame, history.length will always return 1.</p>
+<h1 style="border: 2px solid Violet;">Hello World</h1>
 
-<script>
-let length = history.length;
-document.getElementById("demo").innerHTML = length;
-</script>
+<p>Same as color name "Tomato":</p>
 
-<script>
-  let length = window.history.length;
-  document.getElementById("demo").innerHTML = length;
-  </script>
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
 
-<h1>The Window Location Object</h1>
-<h2>The origin Property</h2>
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
 
-<p id="demo"></p>
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
 
-<script>
-let origin = window.location.origin;
-document.getElementById("demo").innerHTML = origin;
-</script>
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
 
-<script>
-  let origin = location.origin;
-  document.getElementById("demo").innerHTML = origin;
-  </script>
+<h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+<h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+<h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+<h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
 
-<h1>The Window Navigator Object</h1>
-<h2>The The language Property</h2>
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
 
-<p id="demo"></p>
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
 
-<script>
-let language = window.navigator.language;
-document.getElementById("demo").innerHTML = "Browser language: " + language;
-</script>
+<h1 style="background-color:#404040;">#404040</h1>
+<h1 style="background-color:#686868;">#686868</h1>
+<h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+<h1 style="background-color:#bebebe;">#bebebe</h1>
+<h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+<h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
 
-<script>
-  let language = navigator.language;
-  document.getElementById("demo").innerHTML = "Browser language: " + language;
-  </script>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
 
-<h1>Window Document Object</h1>
-<h2>The URL Property</h2>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
 
-<p id="demo"></p>
+<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
 
-<script>
-let url = window.document.URL;
-document.getElementById("demo").innerHTML = url;
-</script>
+<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
 
-<script>
-  let url = document.URL;
-  document.getElementById("demo").innerHTML = url;
-  </script>
+<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
 
-<h1>The HTMLCollection Object</h1>
+<h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+<h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+<h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+<h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+<h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+<h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
 
-<p>Use the getElementsByTagName() method to return an HTMLCollection:</p>
-
-<script>
-var x = document.getElementsByTagName("P");
-document.write(x);
-</script>
-
-<p>The number of P elements on this page:</p>
-
-<script>
-var x = document.getElementsByTagName("P");
-document.write(x.length);
-</script>
-
-<p>Loop through each HTML element on this page, and write its tag name:</p>
-
-<script>
-var x, i, l;
-x = document.getElementsByTagName("*");
-l = x.length;
-for (i = 0; i < l; i++) {
-  document.write(x[i].tagName + "<br>");
-}
-</script>
-
-<p>Click the button to display the style properties of this document.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var x = document.getElementsByTagName("STYLE")[0];
-  document.getElementById("demo").innerHTML = x.innerHTML;
-}
-</script>
-
-<h1 id="myH1" style="color:red">My Header</h1>
-
-<p>Click the button to get the style property of the H1 element.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myH1").style.color;
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
-
-<p>Click the button to create a STYLE element, and place it in the head section.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p>The created style element contains css declarations that will change the font properties of this document.</p>
-
-<script>
-function myFunction() {
-  var x = document.createElement("STYLE");
-  var t = document.createTextNode("body {font: 20px verdana;}");
-  x.appendChild(t);
-  document.head.appendChild(x);
-}
-</script>
-
-<h1 id="myH1">How to change the style of a header</h1>
-
-<p>Click the button to change the style of the H1 element.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("myH1").style.color = "red";
-}
-</script>
-
-<h1>The Console Object</h1>
-<h2>The error() Method</h2>
-<p>Remember to open the console (Press F12) before you click "Run".</p>
-
-<script>
-window.console.error("You made a mistake");
-</script>
-
-<script>
-  console.error("You made a mistake");
-  </script>
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
 
 </body>
 </html>
