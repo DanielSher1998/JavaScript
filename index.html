@@ -116,6 +116,51 @@ tr {
   border-bottom: 1px solid #ddd;
 }
 tr:hover {background-color: #D6EEEE;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+.note {
+  font-size: 120%;
+  color: red;
+}
+.main {
+  text-align: center;
+}
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 20px;
+} 
   </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
@@ -1783,6 +1828,312 @@ The img element is used to provide backward compatibility for browsers that do n
 </table>
 
 <p><b>Note:</b> The table columns does not collapse properly in Safari browsers.</p>
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2>Unordered List with Disc Bullets</h2>
+
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+
+<h2>Unordered List with Circle Bullets</h2>
+
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>Unordered List with Square Bullets</h2>
+
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Unordered List without Bullets</h2>
+
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h2>Ordered List with Numbers</h2>
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+
+<h2>Ordered List with Letters</h2>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<h2>Ordered List with Lowercase Letters</h2>
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<h2>Ordered List with Roman Numbers</h2>
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<h2>Ordered List with Lowercase Roman Numbers</h2>
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+
+<h2>The start attribute</h2>
+<p>By default, an ordered list will start counting from 1. Use the start attribute to start counting from a specified number:</p>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="I" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<p style="border: 1px solid black">Hello World</p>
+<div style="border: 1px solid black">Hello World</div>
+
+<p>The P and the DIV elements are both block elements, and they will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+
+<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+
+<h1>The span element</h1>
+
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+  </div> 
+  
+  <div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+<h2>The class Attribute</h2>
+<p>Use CSS to style elements with the class name "city":</p>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+<h2>Different Elements Can Share Same Class</h2>
+
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myHeader">My Header</h1>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+<h2>HTML Iframes</h2>
+<p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+<iframe src="demo_iframe.htm" style="height:200px;width:300px" title="Iframe Example"></iframe>
+
+<h2>Remove the Iframe Border</h2>
+<p>To remove the default border of the iframe, use CSS:</p>
+
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+<h2>Custom Iframe Border</h2>
+<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+<iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+<h2>Iframe - Target for a Link</h2>
+
+<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
 
 </body>
 </html>
